@@ -124,7 +124,8 @@ def main():
                      straight,
                      three_of_a_kind,
                      two_pair,
-                     one_pair]
+                     one_pair,
+                     high_card]
     draw()
     print(f'Your hand is: {your_hand}')
 
@@ -134,7 +135,6 @@ def main():
             continue
         print(func)
         break
-    print(high_card())
 
 
 if __name__ == '__main__':
