@@ -104,11 +104,12 @@ def two_pair():
 
 def one_pair():
     add_up = 0
+    t_pair = two_pair()
     if len(set(random_suites)) != 1:
         for element in random_cards:
             if random_cards.count(element) == 2:
                 add_up += 1
-        if add_up == 2:
+        if add_up == 2 and t_pair is None:
             return SCORE[7]
 
 

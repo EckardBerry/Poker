@@ -1,7 +1,6 @@
 import pytest
 import unittest
 import poker
-from workbench import *
 
 
 class TestPokerFunctions(unittest.TestCase):
@@ -13,10 +12,10 @@ class TestPokerFunctions(unittest.TestCase):
         self.num_array_one = ['A', '2', '3', '4', '5']
         self.num_array_two = ['A', '2', 'A', '2', '5']
         self.num_array_three = ['A', '2', 'A', '4', 'A']
-        self.num_array_four = ['A', '2', 'A', '2', 'A']
+        self.num_array_four = ['A', '2', 'A', '2', '2']
         self.num_array_five = ['K', 'K', 'K', 'K', '7']
         self.num_array_six = ['A', 'Q', '2', '4', '8']
-        self.num_array_seven = ['A', '2', '3', '4', '6']
+        self.num_array_seven = ['A', '2', 'A', '4', '4']
         self.num_array_eight = ['K', '2', 'A', '2', '5']
 
     @pytest.mark.test_the_straight_flush_function_is_working
